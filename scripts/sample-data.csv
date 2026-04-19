@@ -1,0 +1,21 @@
+id;name;brand;address;city;postal_code;latitude;longitude;gazole_price;sp95_price;sp98_price;e10_price;e85_price;gplc_price
+ST001;Station Total Nouakchott Centre;Total;Avenue Gamal Abdel Nasser;Nouakchott;10000;18.0860;-15.9785;1.22;1.32;1.42;1.28;0.92;0.82
+ST002;Station Naftal Tevragh Zeina;Naftal;Rue de l'Ambassade;Nouakchott;10001;18.1024;-15.9902;1.20;1.30;1.40;1.26;0.90;0.80
+ST003;Station Star Ksar;Star Oil;Avenue Kennedy;Nouakchott;10002;18.0734;-15.9643;1.24;1.34;1.44;1.30;0.94;0.84
+ST004;Station Petrom Sebkha;Petrom;Route de Sebkha;Nouakchott;10003;18.0512;-15.9812;1.21;1.31;1.41;1.27;0.91;0.81
+ST005;Station Total Arafat;Total;Boulevard Maritime;Nouakchott;10004;18.0345;-15.9523;1.23;1.33;1.43;1.29;0.93;0.83
+ST006;Station Naftal Nouadhibou;Naftal;Avenue Principale;Nouadhibou;20000;20.9310;-17.0347;1.25;1.35;1.45;1.31;0.95;0.85
+ST007;Station Total Nouadhibou Port;Total;Zone Portuaire;Nouadhibou;20001;20.9156;-17.0489;1.26;1.36;1.46;1.32;0.96;0.86
+ST008;Station Star Nouadhibou;Star Oil;Route de la Baie;Nouadhibou;20002;20.9234;-17.0234;1.24;1.34;1.44;1.30;0.94;0.84
+ST009;Station Petrom Atar;Petrom;Centre Ville;Atar;30000;20.5170;-13.0499;1.28;1.38;1.48;1.34;0.98;0.88
+ST010;Station Total Atar;Total;Route de Chinguetti;Atar;30001;20.5234;-13.0567;1.27;1.37;1.47;1.33;0.97;0.87
+ST011;Station Naftal Zouerate;Naftal;Avenue de la Gare;Zouerate;40000;22.7356;-12.4734;1.30;1.40;1.50;1.36;1.00;0.90
+ST012;Station Total Zouerate;Total;Centre Commercial;Zouerate;40001;22.7412;-12.4812;1.29;1.39;1.49;1.35;0.99;0.89
+ST013;Station Star Kiffa;Star Oil;Route Nationale 1;Kiffa;50000;16.6234;-11.4023;1.26;1.36;1.46;1.32;0.96;0.86
+ST014;Station Petrom Kiffa;Petrom;Centre Ville;Kiffa;50001;16.6189;-11.3978;1.25;1.35;1.45;1.31;0.95;0.85
+ST015;Station Total Kaedi;Total;Bord du Fleuve;Kaedi;60000;16.1512;-13.5034;1.27;1.37;1.47;1.33;0.97;0.87
+ST016;Station Naftal Kaedi;Naftal;Avenue Principale;Kaedi;60001;16.1478;-13.4989;1.26;1.36;1.46;1.32;0.96;0.86
+ST017;Station Star Rosso;Star Oil;Frontiere Senegal;Rosso;70000;16.5123;-15.8045;1.24;1.34;1.44;1.30;0.94;0.84
+ST018;Station Total Aioun;Total;Centre Ville;Aioun el Atrouss;80000;16.6612;-9.6145;1.28;1.38;1.48;1.34;0.98;0.88
+ST019;Station Petrom Nema;Petrom;Route de Bamako;Nema;90000;16.6167;-7.2567;1.32;1.42;1.52;1.38;1.02;0.92
+ST020;Station Total Tidjikja;Total;Oasis;Tidjikja;31000;18.5534;-11.4234;1.30;1.40;1.50;1.36;1.00;0.90

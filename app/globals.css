@@ -1,0 +1,210 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Warm Mauritania-inspired palette: Desert sand, golden sun, green oasis */
+  --background: oklch(0.985 0.008 85);
+  --foreground: oklch(0.35 0.04 55);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.35 0.04 55);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.35 0.04 55);
+  /* Vibrant desert gold primary */
+  --primary: oklch(0.72 0.16 70);
+  --primary-foreground: oklch(0.98 0.01 85);
+  /* Warm sand secondary */
+  --secondary: oklch(0.96 0.025 75);
+  --secondary-foreground: oklch(0.40 0.04 55);
+  /* Soft cream muted */
+  --muted: oklch(0.95 0.018 80);
+  --muted-foreground: oklch(0.55 0.03 60);
+  /* Fresh green accent (Mauritanian flag inspired) */
+  --accent: oklch(0.62 0.17 145);
+  --accent-foreground: oklch(0.98 0.01 85);
+  --destructive: oklch(0.60 0.20 25);
+  --destructive-foreground: oklch(0.98 0.01 85);
+  --border: oklch(0.90 0.025 80);
+  --input: oklch(0.94 0.02 80);
+  --ring: oklch(0.72 0.16 70);
+  /* Chart colors - warm and vibrant */
+  --chart-1: oklch(0.72 0.16 70);
+  --chart-2: oklch(0.62 0.17 145);
+  --chart-3: oklch(0.65 0.14 200);
+  --chart-4: oklch(0.78 0.12 50);
+  --chart-5: oklch(0.68 0.18 30);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.98 0.012 80);
+  --sidebar-foreground: oklch(0.35 0.04 55);
+  --sidebar-primary: oklch(0.72 0.16 70);
+  --sidebar-primary-foreground: oklch(0.98 0.01 85);
+  --sidebar-accent: oklch(0.62 0.17 145);
+  --sidebar-accent-foreground: oklch(0.98 0.01 85);
+  --sidebar-border: oklch(0.90 0.025 80);
+  --sidebar-ring: oklch(0.72 0.16 70);
+  /* Custom fuel colors - vibrant and distinct */
+  --fuel-gazole: oklch(0.58 0.14 250);
+  --fuel-sp95: oklch(0.58 0.17 145);
+  --fuel-sp98: oklch(0.65 0.18 30);
+  --fuel-e10: oklch(0.70 0.16 85);
+  --fuel-e85: oklch(0.58 0.18 170);
+  --fuel-gplc: oklch(0.62 0.14 280);
+}
+
+.dark {
+  /* Warm dark mode - no pure black, rich warm tones */
+  --background: oklch(0.22 0.025 55);
+  --foreground: oklch(0.95 0.015 80);
+  --card: oklch(0.26 0.025 55);
+  --card-foreground: oklch(0.95 0.015 80);
+  --popover: oklch(0.26 0.025 55);
+  --popover-foreground: oklch(0.95 0.015 80);
+  --primary: oklch(0.78 0.16 70);
+  --primary-foreground: oklch(0.22 0.025 55);
+  --secondary: oklch(0.32 0.03 55);
+  --secondary-foreground: oklch(0.95 0.015 80);
+  --muted: oklch(0.30 0.025 55);
+  --muted-foreground: oklch(0.70 0.025 80);
+  --accent: oklch(0.65 0.17 145);
+  --accent-foreground: oklch(0.98 0.01 85);
+  --destructive: oklch(0.58 0.20 25);
+  --destructive-foreground: oklch(0.95 0.01 85);
+  --border: oklch(0.38 0.025 55);
+  --input: oklch(0.30 0.025 55);
+  --ring: oklch(0.78 0.16 70);
+  --chart-1: oklch(0.78 0.16 70);
+  --chart-2: oklch(0.65 0.17 145);
+  --chart-3: oklch(0.68 0.14 200);
+  --chart-4: oklch(0.82 0.12 50);
+  --chart-5: oklch(0.72 0.18 30);
+  --sidebar: oklch(0.26 0.025 55);
+  --sidebar-foreground: oklch(0.95 0.015 80);
+  --sidebar-primary: oklch(0.78 0.16 70);
+  --sidebar-primary-foreground: oklch(0.22 0.025 55);
+  --sidebar-accent: oklch(0.65 0.17 145);
+  --sidebar-accent-foreground: oklch(0.98 0.01 85);
+  --sidebar-border: oklch(0.38 0.025 55);
+  --sidebar-ring: oklch(0.78 0.16 70);
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Geist', 'Geist Fallback', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* MapLibre GL styles */
+.maplibregl-map {
+  font-family: inherit;
+}
+
+.maplibregl-popup-content {
+  @apply rounded-xl shadow-xl border border-border bg-card p-0 overflow-hidden;
+}
+
+.maplibregl-popup-close-button {
+  @apply text-muted-foreground hover:text-foreground p-2;
+}
+
+/* Custom scrollbar - warm tones */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full hover:bg-primary/50;
+}
+
+/* Fuel type badge colors - vibrant */
+.fuel-gazole {
+  background-color: oklch(0.58 0.14 250 / 0.18);
+  color: oklch(0.48 0.14 250);
+  border: 1px solid oklch(0.58 0.14 250 / 0.25);
+}
+
+.fuel-sp95 {
+  background-color: oklch(0.58 0.17 145 / 0.18);
+  color: oklch(0.48 0.17 145);
+  border: 1px solid oklch(0.58 0.17 145 / 0.25);
+}
+
+.fuel-sp98 {
+  background-color: oklch(0.65 0.18 30 / 0.18);
+  color: oklch(0.52 0.18 30);
+  border: 1px solid oklch(0.65 0.18 30 / 0.25);
+}
+
+.fuel-e10 {
+  background-color: oklch(0.70 0.16 85 / 0.18);
+  color: oklch(0.55 0.16 85);
+  border: 1px solid oklch(0.70 0.16 85 / 0.25);
+}
+
+.fuel-e85 {
+  background-color: oklch(0.58 0.18 170 / 0.18);
+  color: oklch(0.48 0.18 170);
+  border: 1px solid oklch(0.58 0.18 170 / 0.25);
+}
+
+.fuel-gplc {
+  background-color: oklch(0.62 0.14 280 / 0.18);
+  color: oklch(0.52 0.14 280);
+  border: 1px solid oklch(0.62 0.14 280 / 0.25);
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

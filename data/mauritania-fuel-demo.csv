@@ -1,0 +1,56 @@
+id;name;brand;address;city;postal_code;country_code;latitude;longitude;services;gazole_price;sp95_price;sp98_price;e10_price;e85_price;gplc_price
+MR0001;Station Total Nouakchott Centre;Total;Zone Commerciale, Nouakchott;Nouakchott;10000;MR;18.089456;-15.961234;Station-Service,Boutique,Lavage;48.73;52.51;55.98;51.21;38.56;42.15
+MR0002;Station Naftal Nouakchott Nord;Naftal;Zone Industrielle, Nouakchott;Nouakchott;10001;MR;18.076234;-15.984567;Station-Service;48.52;52.30;55.76;51.00;null;null
+MR0003;Station Star Oil Nouakchott Sud;Star Oil;Zone Résidentielle, Nouakchott;Nouakchott;10002;MR;18.045678;-15.972345;Station-Service,Boutique;48.85;52.63;56.10;51.33;null;42.42
+MR0004;Station Petrom Nouakchott Est;Petrom;Zone Commerciale, Nouakchott;Nouakchott;10003;MR;18.093456;-15.943456;Station-Service,Lavage;48.61;52.39;55.85;51.09;38.44;null
+MR0005;Station Total Nouakchott Ouest;Total;Zone Portuaire, Nouakchott;Nouakchott;10004;MR;18.058901;-15.996789;Station-Service,Boutique,Lavage;48.94;52.72;56.19;51.42;null;42.51
+MR0006;Station Naftal Nouadhibou Centre;Naftal;Zone Commerciale, Nouadhibou;Nouadhibou;20000;MR;20.915678;-17.029876;Station-Service;48.49;52.27;55.73;50.97;null;null
+MR0007;Station Total Nouadhibou Nord;Total;Zone Industrielle, Nouadhibou;Nouadhibou;20001;MR;20.948901;-17.006543;Station-Service,Boutique,Lavage;48.82;52.60;56.06;51.30;null;42.39
+MR0008;Station Star Oil Nouadhibou Sud;Star Oil;Zone Portuaire, Nouadhibou;Nouadhibou;20002;MR;20.903456;-17.052345;Station-Service;48.58;52.36;55.82;51.06;null;null
+MR0009;Station Petrom Nouadhibou Est;Petrom;Zone Commerciale, Nouadhibou;Nouadhibou;20003;MR;20.936789;-17.013456;Station-Service,Boutique,Lavage;48.91;52.69;56.15;51.39;null;42.48
+MR0010;Station Total Nouadhibou Ouest;Total;Zone Résidentielle, Nouadhibou;Nouadhibou;20004;MR;20.920123;-17.041234;Station-Service;48.67;52.45;55.91;51.15;null;null
+MR0011;Station Naftal Rosso Centre;Naftal;Zone Commerciale, Rosso;Rosso;30000;MR;16.516789;-15.798765;Station-Service,Boutique;48.76;52.54;56.00;51.24;null;42.27
+MR0012;Station Total Rosso Nord;Total;Zone Frontalière, Rosso;Rosso;30001;MR;16.543456;-15.785432;Station-Service,Lavage;48.43;52.21;55.67;50.91;null;null
+MR0013;Station Star Oil Rosso Sud;Star Oil;Zone Industrielle, Rosso;Rosso;30002;MR;16.490123;-15.812098;Station-Service;48.70;52.48;55.94;51.18;null;null
+MR0014;Station Petrom Rosso Est;Petrom;Zone Commerciale, Rosso;Rosso;30003;MR;16.523456;-15.803456;Station-Service,Boutique,Lavage;48.55;52.33;55.79;51.03;null;42.33
+MR0015;Station Total Rosso Ouest;Total;Zone Résidentielle, Rosso;Rosso;30004;MR;16.506790;-15.819876;Station-Service,Lavage;48.88;52.66;56.12;51.36;null;null
+MR0016;Station Naftal Kaédi Centre;Naftal;Zone Commerciale, Kaédi;Kaédi;40000;MR;16.153456;-13.493456;Station-Service,Boutique;48.64;52.42;55.88;51.12;null;42.21
+MR0017;Station Total Kaédi Nord;Total;Zone Industrielle, Kaédi;Kaédi;40001;MR;16.176789;-13.486543;Station-Service,Lavage;48.97;52.75;56.21;51.45;null;null
+MR0018;Station Star Oil Kaédi Sud;Star Oil;Zone Portuaire, Kaédi;Kaédi;40002;MR;16.140123;-13.510234;Station-Service;48.40;52.18;55.64;50.88;null;null
+MR0019;Station Petrom Kaédi Est;Petrom;Zone Commerciale, Kaédi;Kaédi;40003;MR;16.163456;-13.500123;Station-Service,Boutique,Lavage;48.73;52.51;55.97;51.21;null;42.36
+MR0020;Station Total Kaédi Ouest;Total;Zone Résidentielle, Kaédi;Kaédi;40004;MR;16.147901;-13.517890;Station-Service,Lavage;48.58;52.36;55.82;51.06;null;null
+MR0021;Station Naftal Kiffa Centre;Naftal;Zone Commerciale, Kiffa;Kiffa;50000;MR;16.619876;-11.396543;Station-Service;48.46;52.24;55.70;50.94;null;null
+MR0022;Station Total Kiffa Nord;Total;Zone Industrielle, Kiffa;Kiffa;50001;MR;16.643456;-11.383456;Station-Service,Boutique,Lavage;48.79;52.57;56.03;51.27;null;42.42
+MR0023;Station Star Oil Kiffa Sud;Star Oil;Zone Résidentielle, Kiffa;Kiffa;50002;MR;16.606790;-11.409876;Station-Service;48.52;52.30;55.76;51.00;null;null
+MR0024;Station Petrom Kiffa Est;Petrom;Zone Commerciale, Kiffa;Kiffa;50003;MR;16.630123;-11.398765;Station-Service,Boutique,Lavage;48.85;52.63;56.09;51.33;null;null
+MR0025;Station Total Kiffa Ouest;Total;Zone Centrale, Kiffa;Kiffa;50004;MR;16.613456;-11.412345;Station-Service,Lavage;48.61;52.39;55.85;51.09;null;42.30
+MR0026;Station Naftal Zouérate Centre;Naftal;Zone Commerciale, Zouérate;Zouérate;60000;MR;22.733456;-12.463456;Station-Service,Boutique;48.94;52.72;56.18;51.42;null;null
+MR0027;Station Total Zouérate Nord;Total;Zone Industrielle, Zouérate;Zouérate;60001;MR;22.765678;-12.440123;Station-Service,Lavage;48.70;52.48;55.94;51.18;null;42.54
+MR0028;Station Star Oil Zouérate Sud;Star Oil;Zone Minière, Zouérate;Zouérate;60002;MR;22.720123;-12.486789;Station-Service;48.43;52.21;55.67;50.91;null;null
+MR0029;Station Petrom Zouérate Est;Petrom;Zone Commerciale, Zouérate;Zouérate;60003;MR;22.746790;-12.455678;Station-Service,Boutique,Lavage;48.76;52.54;56.00;51.24;null;null
+MR0030;Station Total Zouérate Ouest;Total;Zone Résidentielle, Zouérate;Zouérate;60004;MR;22.736789;-12.471234;Station-Service;48.58;52.36;55.82;51.06;null;42.45
+MR0031;Station Naftal Atar Centre;Naftal;Zone Commerciale, Atar;Atar;70000;MR;20.519876;-13.043456;Station-Service,Boutique;48.82;52.60;56.06;51.30;null;null
+MR0032;Station Total Atar Nord;Total;Zone Touristique, Atar;Atar;70001;MR;20.553456;-13.020123;Station-Service,Lavage;48.55;52.33;55.79;51.03;null;42.39
+MR0033;Station Star Oil Atar Sud;Star Oil;Zone Résidentielle, Atar;Atar;70002;MR;20.506790;-13.066789;Station-Service;48.88;52.66;56.12;51.36;null;null
+MR0034;Station Petrom Atar Est;Petrom;Zone Commerciale, Atar;Atar;70003;MR;20.533456;-13.035678;Station-Service,Boutique,Lavage;48.64;52.42;55.88;51.12;null;null
+MR0035;Station Total Atar Ouest;Total;Zone Oasis, Atar;Atar;70004;MR;20.513456;-13.051234;Station-Service;48.97;52.75;56.21;51.45;null;42.51
+MR0036;Station Naftal Aleg Centre;Naftal;Zone Commerciale, Aleg;Aleg;80000;MR;17.053456;-13.906543;Station-Service;48.40;52.18;55.64;50.88;null;null
+MR0037;Station Total Aleg Nord;Total;Zone Industrielle, Aleg;Aleg;80001;MR;17.086789;-13.893456;Station-Service,Boutique,Lavage;48.73;52.51;55.97;51.21;null;42.33
+MR0038;Station Star Oil Aleg Sud;Star Oil;Zone Agricole, Aleg;Aleg;80002;MR;17.040123;-13.919876;Station-Service;48.49;52.27;55.73;50.97;null;null
+MR0039;Station Petrom Aleg Est;Petrom;Zone Commerciale, Aleg;Aleg;80003;MR;17.063456;-13.908765;Station-Service,Boutique,Lavage;48.82;52.60;56.06;51.30;null;null
+MR0040;Station Total Aleg Ouest;Total;Zone Résidentielle, Aleg;Aleg;80004;MR;17.047901;-13.923456;Station-Service,Lavage;48.58;52.36;55.82;51.06;null;42.45
+MR0041;Station Naftal Akjoujt Centre;Naftal;Zone Commerciale, Akjoujt;Akjoujt;90000;MR;19.753456;-14.373456;Station-Service,Boutique;48.67;52.45;55.91;51.15;null;null
+MR0042;Station Total Akjoujt Nord;Total;Zone Minière, Akjoujt;Akjoujt;90001;MR;19.786789;-14.360123;Station-Service,Lavage;48.94;52.72;56.18;51.42;null;42.48
+MR0043;Station Star Oil Akjoujt Sud;Star Oil;Zone Résidentielle, Akjoujt;Akjoujt;90002;MR;19.740123;-14.386789;Station-Service;48.43;52.21;55.67;50.91;null;null
+MR0044;Station Petrom Akjoujt Est;Petrom;Zone Commerciale, Akjoujt;Akjoujt;90003;MR;19.763456;-14.375678;Station-Service,Boutique,Lavage;48.76;52.54;56.00;51.24;null;null
+MR0045;Station Total Akjoujt Ouest;Total;Zone Industrielle, Akjoujt;Akjoujt;90004;MR;19.747901;-14.391234;Station-Service;48.55;52.33;55.79;51.03;null;42.51
+MR0046;Station Naftal Néma Centre;Naftal;Zone Commerciale, Néma;Néma;100000;MR;16.620123;-7.243456;Station-Service,Boutique;48.88;52.66;56.12;51.36;null;null
+MR0047;Station Total Néma Nord;Total;Zone Frontalière, Néma;Néma;100001;MR;16.653456;-7.230123;Station-Service,Lavage;48.61;52.39;55.85;51.09;null;42.42
+MR0048;Station Star Oil Néma Sud;Star Oil;Zone Résidentielle, Néma;Néma;100002;MR;16.606790;-7.256789;Station-Service;48.94;52.72;56.18;51.42;null;null
+MR0049;Station Petrom Néma Est;Petrom;Zone Commerciale, Néma;Néma;100003;MR;16.633456;-7.245678;Station-Service,Boutique,Lavage;48.70;52.48;55.94;51.18;null;null
+MR0050;Station Total Néma Ouest;Total;Zone Centrale, Néma;Néma;100004;MR;16.617901;-7.261234;Station-Service;48.46;52.24;55.70;50.94;null;42.54
+MR0051;Station Naftal Sélibaby Centre;Naftal;Zone Commerciale, Sélibaby;Sélibaby;110000;MR;15.161456;-9.548765;Station-Service,Boutique;48.79;52.57;56.03;51.27;null;null
+MR0052;Station Total Sélibaby Nord;Total;Zone Agricole, Sélibaby;Sélibaby;110001;MR;15.194123;-9.535432;Station-Service,Lavage;48.52;52.30;55.76;51.00;null;42.39
+MR0053;Station Star Oil Sélibaby Sud;Star Oil;Zone Résidentielle, Sélibaby;Sélibaby;110002;MR;15.147901;-9.561098;Station-Service;48.85;52.63;56.09;51.33;null;null
+MR0054;Station Petrom Sélibaby Est;Petrom;Zone Commerciale, Sélibaby;Sélibaby;110003;MR;15.175567;-9.550123;Station-Service,Boutique,Lavage;48.67;52.45;55.91;51.15;null;null
+MR0055;Station Total Sélibaby Ouest;Total;Zone Frontalière, Sélibaby;Sélibaby;110004;MR;15.159012;-9.565678;Station-Service;48.94;52.72;56.18;51.42;null;42.51

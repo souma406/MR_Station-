@@ -1,0 +1,102 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model FuelType {
+  id          Int            @id @default(autoincrement())
+  code        String         @unique
+  name        String
+  description String?
+  createdAt   DateTime       @default(now()) @map("created_at")
+  updatedAt   DateTime       @updatedAt @map("updated_at")
+  prices      CurrentPrice[]
+  history     PriceHistory[]
+
+  @@map("fuel_types")
+}
+
+model Station {
+  id          Int            @id @default(autoincrement())
+  externalId  String?        @map("external_id")
+  name        String
+  brand       String?
+  address     String?
+  city        String
+  postalCode  String?        @map("postal_code")
+  countryCode String         @default("MR") @map("country_code")
+  latitude    Float
+  longitude   Float
+  services    String[]
+  isActive    Boolean        @default(true) @map("is_active")
+  createdAt   DateTime       @default(now()) @map("created_at")
+  updatedAt   DateTime       @updatedAt @map("updated_at")
+  prices      CurrentPrice[]
+  history     PriceHistory[]
+
+  @@unique([externalId, countryCode])
+  @@index([city])
+  @@index([countryCode])
+  @@index([latitude, longitude])
+  @@map("stations")
+}
+
+model CurrentPrice {
+  id               Int       @id @default(autoincrement())
+  stationId        Int       @map("station_id")
+  fuelTypeId       Int       @map("fuel_type_id")
+  price            Float
+  currency         String    @default("MRU")
+  sourceUpdatedAt  DateTime? @map("source_updated_at")
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+
+  station   Station  @relation(fields: [stationId], references: [id], onDelete: Cascade)
+  fuelType  FuelType @relation(fields: [fuelTypeId], references: [id], onDelete: Cascade)
+
+  @@unique([stationId, fuelTypeId])
+  @@index([stationId])
+  @@index([fuelTypeId])
+  @@index([price])
+  @@map("current_prices")
+}
+
+model PriceHistory {
+  id          Int       @id @default(autoincrement())
+  stationId   Int       @map("station_id")
+  fuelTypeId  Int       @map("fuel_type_id")
+  price       Float
+  currency    String    @default("MRU")
+  recordedAt  DateTime  @default(now()) @map("recorded_at")
+
+  station   Station  @relation(fields: [stationId], references: [id], onDelete: Cascade)
+  fuelType  FuelType @relation(fields: [fuelTypeId], references: [id], onDelete: Cascade)
+
+  @@index([stationId])
+  @@index([fuelTypeId])
+  @@index([recordedAt])
+  @@map("price_history")
+}
+
+model ImportRun {
+  id              Int       @id @default(autoincrement())
+  filename        String
+  status          String    @default("running") // running, completed, failed
+  rowsRead        Int       @default(0) @map("rows_read")
+  stationsCreated Int       @default(0) @map("stations_created")
+  stationsUpdated Int       @default(0) @map("stations_updated")
+  pricesCreated   Int       @default(0) @map("prices_created")
+  pricesUpdated   Int       @default(0) @map("prices_updated")
+  errors          Int       @default(0)
+  errorMessages   String[]  @map("error_messages")
+  startedAt       DateTime  @default(now()) @map("started_at")
+  completedAt     DateTime? @map("completed_at")
+
+  @@index([status])
+  @@index([startedAt])
+  @@map("import_runs")
+}

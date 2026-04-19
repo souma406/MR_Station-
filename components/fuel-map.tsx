@@ -77,62 +77,34 @@ export function FuelMap({
     }
   }, [center.lat, center.lng, zoom])
 
-  // Create marker element with gas station icon
+  // Create marker element with clean drop icon design
   const createMarkerElement = useCallback((station: StationWithPrices, isSelected: boolean) => {
     const el = document.createElement('div')
     el.className = 'station-marker'
-    
+
     const lowestPrice = station.prices.length > 0
       ? Math.min(...station.prices.map(p => parseFloat(String(p.price))))
       : null
 
-    const brand = station.brand?.toLowerCase() || ''
-    const brandColors: Record<string, string> = {
-      'total': '#dc2626',    // Red
-      'naftal': '#16a34a',   // Green
-      'star oil': '#ea580c', // Orange
-      'petrom': '#0891b2',   // Cyan
-      'shell': '#fbbf24',    // Yellow
-      'vivo energy': '#7c3aed', // Purple
-    }
-    
-    const bgColor = isSelected ? '#1e40af' : (brandColors[brand] || '#374151')
-    const strokeColor = isSelected ? '#1e3a8a' : '#1f2937'
-
     el.innerHTML = `
-      <div class="relative cursor-pointer transition-transform hover:scale-110 ${isSelected ? 'scale-125 z-50' : 'z-10'}">
-        <div class="relative flex flex-col items-center">
-          <!-- Gas Station Icon -->
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Background circle -->
-            <circle cx="20" cy="20" r="18" fill="${bgColor}" stroke="${strokeColor}" stroke-width="2"/>
-            <!-- Gas pump icon -->
-            <g fill="white">
-              <!-- Pump body -->
-              <rect x="12" y="14" width="10" height="16" rx="1" fill="white"/>
-              <rect x="13" y="15" width="8" height="6" rx="0.5" fill="${bgColor}"/>
-              <!-- Pump display -->
-              <rect x="14" y="16" width="6" height="4" rx="0.5" fill="white"/>
-              <!-- Pump hose/nozzle -->
-              <path d="M22 18 L26 18 L26 24 L24 26" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <circle cx="24" cy="27" r="2" fill="white"/>
-              <!-- Base -->
-              <rect x="11" y="28" width="12" height="3" rx="0.5" fill="white"/>
-            </g>
+      <div class="relative cursor-pointer transition-transform hover:scale-105 ${isSelected ? 'scale-110' : ''}">
+        <!-- Clean design: Drop icon + price badge -->
+        <div class="flex items-center gap-1.5 bg-white px-2.5 py-1.5 rounded-full shadow-lg border border-gray-200">
+          <!-- Blue drop icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C12 2 5 10 5 15C5 18.5 8 21.5 12 21.5C16 21.5 19 18.5 19 15C19 10 12 2 12 2Z" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+            <ellipse cx="9" cy="13" rx="2" ry="3" fill="white" opacity="0.3"/>
           </svg>
-          
-          <!-- Price badge -->
+          <!-- Price -->
           ${lowestPrice ? `
-            <div class="absolute -bottom-2 bg-white px-2 py-0.5 rounded-full shadow-md border border-gray-200">
-              <span class="text-xs font-bold text-gray-800">${lowestPrice.toFixed(0)} MRU</span>
-            </div>
-          ` : ''}
-          
-          <!-- Selection indicator -->
-          ${isSelected ? `
-            <div class="absolute -bottom-1 w-3 h-3 bg-blue-600 rounded-full animate-pulse border-2 border-white"></div>
-          ` : ''}
+            <span class="text-sm font-bold text-gray-900">${lowestPrice.toFixed(1)}</span>
+            <span class="text-[10px] font-medium text-gray-500">MRU</span>
+          ` : '<span class="text-xs text-gray-400">N/A</span>'}
         </div>
+        <!-- Selection dot -->
+        ${isSelected ? `
+          <div class="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+        ` : ''}
       </div>
     `
     return el
